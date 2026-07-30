@@ -513,6 +513,22 @@ html {
     border: 1px solid rgba(123, 47, 247, 0.15);
 }
 
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(123, 47, 247, 0.08) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: imgShimmer 2s infinite ease-in-out;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes imgShimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
 .portfolio-item:hover {
     border-color: rgba(0, 198, 255, 0.5);
     box-shadow: 0 12px 35px rgba(123, 47, 247, 0.3);
@@ -526,6 +542,8 @@ html {
     object-fit: cover;
     transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.2), opacity 0.4s ease;
     display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio-item video:not(.is-playing) {

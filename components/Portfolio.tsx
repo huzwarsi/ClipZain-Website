@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import LazyVideo from './LazyVideo';
 
 export default function Portfolio() {
@@ -65,13 +66,37 @@ export default function Portfolio() {
           </div>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <img src="/art-board-1.png" alt="branding design" loading="lazy" />
+              <Image
+                src="/art-board-1.png"
+                alt="branding design"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="portfolio-item">
-              <img src="/art-board-2-1.png" alt="social media graphic" loading="lazy" />
+              <Image
+                src="/art-board-2-1.png"
+                alt="social media graphic"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="portfolio-item">
-              <img src="/art-board-2.png" alt="ad creative" loading="lazy" />
+              <Image
+                src="/art-board-2.png"
+                alt="ad creative"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
           </div>
         </div>
@@ -89,13 +114,37 @@ export default function Portfolio() {
           </div>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <img src="/1-1.png" alt="thumbnail" loading="lazy" />
+              <Image
+                src="/1-1.png"
+                alt="thumbnail"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="portfolio-item">
-              <img src="/22.jpg" alt="thumbnail design" loading="lazy" />
+              <Image
+                src="/22.jpg"
+                alt="thumbnail design"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
             <div className="portfolio-item">
-              <img src="/33.jpg" alt="clickable thumb" loading="lazy" />
+              <Image
+                src="/33.jpg"
+                alt="clickable thumb"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={80}
+                loading="lazy"
+                style={{ objectFit: 'cover' }}
+              />
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Testimonials() {
   return (
     <section className="testimonials-section">
@@ -18,9 +20,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;CLIPZEN turned our product ads into profit machines. 4x ROAS in 30 days.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/women/44.jpg"
-                alt="client"
+                alt="client Megan"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Megan</strong>
@@ -38,9 +42,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;Real estate drone edits + AI ads closed premium listings fast. Elite quality.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="client"
+                alt="client Dane"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Dane</strong>
@@ -58,9 +64,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;YouTube thumbnails increased CTR by 62% overnight. Best creative decision.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/women/68.jpg"
-                alt="client"
+                alt="client Amaya"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Amaya</strong>
@@ -78,9 +86,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;Their AI Influencer Ads gave us a 350% ROI. The creative strategy is unmatched.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/men/45.jpg"
-                alt="client"
+                alt="client Luke"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Luke</strong>
@@ -98,9 +108,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;Professional video editing elevated our YouTube channel to 500k+ views. Absolute masters.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/women/33.jpg"
-                alt="client"
+                alt="client Benthany"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Benthany</strong>
@@ -118,9 +130,11 @@ export default function Testimonials() {
             </div>
             <p>&quot;From branding to high-CTR thumbnails, CLIPZEN is the secret weapon for serious sellers.&quot;</p>
             <div>
-              <img
+              <Image
                 src="https://randomuser.me/api/portraits/men/52.jpg"
-                alt="client"
+                alt="client Michael Lee"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <strong>Michael Lee</strong>
